@@ -1,0 +1,86 @@
+/* Notification Component CSS */
+
+/* Individual notification item style */
+.notificationItem {
+  background-color: #ffffff; /* White background for each notification */
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  border-left: 4px solid; /* Dynamic border color based on notification type */
+}
+
+/* Close button style */
+.notificationItem .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Text container for notification details */
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Logo and type container */
+.logoAndTypeContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+/* Heading style */
+.heading-style {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+/* Status message style */
+.statusStyle {
+  font-size: 14px;
+  color: #64748b; /* Neutral text color */
+  margin-top: 5px;
+}
+
+/* Icon styles */
+.icon-style {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Alert type colors */
+.notificationItem.success {
+  border-color: #2dca73; /* Green for success */
+}
+
+.notificationItem.error {
+  border-color: #ff0b37; /* Red for error */
+}
+
+.notificationItem.warning {
+  border-color: #ffb800; /* Orange for warning */
+}
+
+.notificationItem.info {
+  border-color: #0f81e0; /* Blue for info */
+}
+
+/* Background and text color for heading types */
+.notificationItem.success .heading-style {
+  color: #2dca73;
+}
+
+.notificationItem.error .heading-style {
+  color: #ff0b37;
+}
+
+.notificationItem.warning .heading-style {
+  color: #ffb800;
+}
+
+.notificationItem.info .heading-style {
+  color: #0f81e0;
+}
